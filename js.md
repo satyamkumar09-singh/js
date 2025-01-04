@@ -40,3 +40,4 @@ single -> ++ ,--
 ? :
 
 difference between parameters and arguments.
+append is used to add a child class into parent class.
