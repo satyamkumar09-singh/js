@@ -2,6 +2,9 @@ function validate(){
     let name = document.getElementById('name').value 
     let age = document.getElementById('age').value
     let contact = document.getElementById('contact').value
+    let email = document.getElementById('email').value
+    let password = document.getElementById('password').value
+    let cpassword = document.getElementById('cpassword').value
     if(name == ""){
         alert('please fill the name')
         document.getElementById('name').focus()
@@ -42,6 +45,31 @@ else if( isNaN(contact)){
 else if( contact.length>10 || contact.length<10 ){
     alert('contact number should be 10 digits')
     document.getElementById('contact').focus()
+    return false
+}
+else if( email == ""){
+    alert('please fill the email')
+    document.getElementById('email').focus()
+    return false
+}
+else if( !(email.includes('@'))){
+    alert('please enter a valid email')
+    document.getElementById('email').focus()
+    return false
+}
+else if(password==""){
+    alert('please fill the password')
+    document.getElementById('password').focus()
+    return false
+}
+else if(!(password.match( /[@#$%^&*~]/))){
+    alert('password should contain atleast one special character')
+    document.getElementById('password').focus()
+    return false
+}
+else if(cpassword == ""){
+    alert('please re-enter the password')
+    document.getElementById('cpassword').focus()
     return false
 }
 }
