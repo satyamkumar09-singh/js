@@ -60,3 +60,16 @@ its functions:
 2 getItem()      ->data retrive in localstorage
 3 removeItem()   ->particular data remove in localstoarge
 4 clear()        ->all data clear in localstorage
+
+
+what is event bubbling ?
+what is event deligation ?
+
+npm= node package manager, helps to add more libraries and frameworks.
+npm install -g json-server =used to install json server
+json-server --version =used to check whether json is install or not(version).
+json=javascript object notation.
+
+jb tak server on hogi tb tak run hogi
+
+`` (backtick) or template literal is used to write html in js file.
